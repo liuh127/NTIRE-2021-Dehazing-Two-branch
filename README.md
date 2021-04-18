@@ -30,7 +30,7 @@ python test.py --data_dir data_21 --model_save_dir results
 Results on NTIRE 2021 NonHomogeneous Dehazing Challenge testing images:
 
 <div style="text-align: center">
-<img alt="" src="/Image/test_results.pdf" style="display: inline-block;" />
+<img alt="" src="/Image/test_results.png" style="display: inline-block;" />
 </div>
 
 ## Citation
