@@ -76,18 +76,14 @@ with torch.no_grad():
     for batch_idx, hazy in enumerate(val_loader):
         # print(len(val_loader))
         start = time.time()
-        hazy_up = hazy[0].to(device)
-        hazy_down=hazy[1].to(device)
-        img_tensor = torch.zeros(1, 3, 1200, 1600).to(device)
+        hazy = hazy.to(device)
+        
+        img_tensor = MyEnsembleNet(hazy_up)
 
-        frame_out_up = MyEnsembleNet(hazy_up)
-        frame_out_down = MyEnsembleNet(hazy_down)
-        img_tensor[:,:,0:600,:] = frame_out_up[:,:,0:600,:]
-        img_tensor[:,:,600:,:] = frame_out_down[:,:,552:,:]
         end = time.time()
         time_list.append((end - start))
         img_list.append(img_tensor)
-    #                 frame_out=(torch.cat([frame_out_up.permute(0,2,3,1), frame_out_down[:,:,80:640,:].permute(0,2,3,1)], 1)).permute(0,3,1,2)
+
         imwrite(img_list[batch_idx], os.path.join(imsave_dir, str(batch_idx)+'.png'))
     time_cost = float(sum(time_list) / len(time_list))
     print('running time per image: ', time_cost)
