@@ -16,10 +16,10 @@ class dehaze_val_dataset(Dataset):
         hazy = Image.open(self.root_hazy +'/'+ self.list_test[index])
         hazy = self.transform(hazy)
 
-        hazy_up=hazy[:,0:1152,:]
-        hazy_down=hazy[:,48:1200,:]
+#         hazy_up=hazy[:,0:1152,:]
+#         hazy_down=hazy[:,48:1200,:]
 #         print(hazy.shape)
-        return [hazy_up,hazy_down]
+        return hazy
 
     def __len__(self):
         return self.file_len
