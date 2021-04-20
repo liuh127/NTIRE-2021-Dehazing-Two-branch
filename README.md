@@ -1,4 +1,4 @@
-##  A Two-branch Neural Network for Non-homogeneous Dehazing via Ensemble Learning(https://arxiv.org/pdf/2104.08902.pdf)
+##  A Two-branch Neural Network for Non-homogeneous Dehazing via Ensemble Learning (https://arxiv.org/pdf/2104.08902.pdf)
 ### Dependencies and Installation
 
 * python3.7
