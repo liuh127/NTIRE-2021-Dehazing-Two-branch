@@ -11,13 +11,16 @@
 ### Pretrained Weights & Dataset
 
 - Download [ImageNet pretrained weights](https://drive.google.com/file/d/1aZQyF16pziCxKlo7BvHHkrMwb8-RurO_/view?usp=sharing) and [our model weights](https://drive.google.com/file/d/1M2n6g7S5_sqPmTIAuI-IC30fhUmQr199/view?usp=sharing).
+- Download our [dataset](https://drive.google.com/drive/folders/1eeBA2V_l9-evSJ0XWhRAww6ftweq8hU_?usp=sharing)
 
 
   
-
+#### Train
+```shell
+python train.py --data_dir data -train_batch_size 8 --model_save_dir train_result
+```
 
 #### Test
-
  ```shell
 python test.py --model_save_dir results
  ```
