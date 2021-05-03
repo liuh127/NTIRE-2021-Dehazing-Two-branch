@@ -78,7 +78,7 @@ with torch.no_grad():
         start = time.time()
         hazy = hazy.to(device)
         
-        img_tensor = MyEnsembleNet(hazy_up)
+        img_tensor = MyEnsembleNet(hazy)
 
         end = time.time()
         time_list.append((end - start))
