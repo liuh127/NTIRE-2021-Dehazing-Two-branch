@@ -43,11 +43,13 @@ Results on NTIRE 2021 NonHomogeneous Dehazing Challenge testing images:
 If you use any part of this code, please kindly cite
 
 ```
-@article{yu2021two,
-  title={A Two-branch Neural Network for Non-homogeneous Dehazing via Ensemble Learning},
-  author={Yu, Yankun and Liu, Huan and Fu, Minghan and Chen, Jun and Wang, Xiyao and Wang, Keyan},
-  journal={arXiv preprint arXiv:2104.08902},
-  year={2021}
+@InProceedings{Yu_2021_CVPR,
+    author    = {Yu, Yankun and Liu, Huan and Fu, Minghan and Chen, Jun and Wang, Xiyao and Wang, Keyan},
+    title     = {A Two-Branch Neural Network for Non-Homogeneous Dehazing via Ensemble Learning},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2021},
+    pages     = {193-202}
 }
 ```
 
