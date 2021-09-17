@@ -17,7 +17,7 @@ Our method wins runner-up award in NTIRE 2021 Non-homogeneous Dehazing Challenge
 - Download [ImageNet pretrained weights](https://drive.google.com/file/d/1aZQyF16pziCxKlo7BvHHkrMwb8-RurO_/view?usp=sharing) and [our model weights](https://drive.google.com/file/d/1M2n6g7S5_sqPmTIAuI-IC30fhUmQr199/view?usp=sharing).
 - Download our [dataset](https://drive.google.com/drive/folders/1eeBA2V_l9-evSJ0XWhRAww6ftweq8hU_?usp=sharing)
 
-Training set that is used during the competition （with gamma correction on NH-HAZE-2020）. Test set is composed of random samples from the training set. The test set is used to provide effective training accuracy. If you want to obtain val and test accuracy on NH-HAZE-2021, please step towards the official competition server. [link](https://competitions.codalab.org/competitions/28032#learn_the_details-overview)
+Training set the one that we use during the competition.  Please be noted that we conduct gamma correction on NH-HAZE-2020. Test set is composed of random samples from the training set. The test set is used to provide effective training accuracy. If you want to obtain val and test accuracy on NH-HAZE-2021, please step towards the official competition server. [link](https://competitions.codalab.org/competitions/28032#learn_the_details-overview)
 
   
 #### Train
